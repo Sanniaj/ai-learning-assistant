@@ -4,33 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9492555e-8fae-4d94-ada3-0fc56bb1f5db" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/context/AuthContext.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/pages/Auth/LoginPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/pages/Auth/RegisterPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/pages/Dashboard/DashboardPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/pages/Documents/DocumentDetailPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/pages/Documents/DocumentListPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/pages/Flashcards/FlashcardListPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/pages/Flashcards/FlashcardPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/pages/NotFoundPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/pages/Profile/ProfilePage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/pages/Quizzes/QuizResultPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/pages/Quizzes/QuizTakePage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/services/aiService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/services/authService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/services/documentService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/services/flashcardService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/services/quizService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/utils/apiPaths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/utils/axiosInstance.js" afterDir="false" />
+    <list default="true" id="9492555e-8fae-4d94-ada3-0fc56bb1f5db" name="Changes" comment="initialize project structure">
+      <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config/multer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/aiController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/authController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/documentController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/flashcardController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/quizController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/middleware/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/middleware/errorHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/ChatHistory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/Document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/FlashCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/Quiz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/aiRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/authRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/documentRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/flashcardRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/quizRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/utils/geminiService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/utils/pdfParser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/utils/textChunker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ai-learning-assistant/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ai-learning-assistant/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ai-learning-assistant/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ai-learning-assistant/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +45,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Sanniaj"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:Sanniaj/ai-learning-assistant.git",
+    "accountId": "0134f019-b758-4f49-8261-810496f232f7"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
@@ -64,8 +80,9 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "backend",
     "javascript.preferred.runtime.type.id": "node",
+    "last_opened_file_path": "/home/sannia/WebstormProjects/ai-learning-assistant/backend/routes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,6 +94,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/routes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/ai-learning-assistant/src/components" />
       <recent name="$PROJECT_DIR$" />
@@ -96,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766649414685</updated>
-      <workItem from="1766649415696" duration="3749000" />
+      <workItem from="1766649415696" duration="11426000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -106,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766650019027</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initialize project structure">
+      <option name="closed" value="true" />
+      <created>1766653278112</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1766653278112</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +142,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="initialize project structure" />
+    <MESSAGE value="{&#10;    &quot;error&quot;: {&#10;        &quot;message&quot;: &quot;You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys.&quot;,&#10;        &quot;type&quot;: &quot;invalid_request_error&quot;,&#10;        &quot;param&quot;: null,&#10;        &quot;code&quot;: null&#10;    }&#10;}" />
+    <option name="LAST_COMMIT_MESSAGE" value="{&#10;    &quot;error&quot;: {&#10;        &quot;message&quot;: &quot;You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys.&quot;,&#10;        &quot;type&quot;: &quot;invalid_request_error&quot;,&#10;        &quot;param&quot;: null,&#10;        &quot;code&quot;: null&#10;    }&#10;}" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/backend/server.js</url>
+          <line>23</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
