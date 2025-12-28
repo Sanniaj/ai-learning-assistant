@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import * as string_decoder from "node:string_decoder";
 
 const QuizSchema = new mongoose.Schema({
     userID: {
